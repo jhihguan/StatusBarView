@@ -19,6 +19,7 @@
 		203BC8101976721500583E50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203BC7F81976721500583E50 /* UIKit.framework */; };
 		203BC8181976721500583E50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 203BC8161976721500583E50 /* InfoPlist.strings */; };
 		203BC81A1976721500583E50 /* StatusBarHeightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 203BC8191976721500583E50 /* StatusBarHeightTests.m */; };
+		203BC8251976726F00583E50 /* JhihTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203BC8241976726F00583E50 /* JhihTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		203BC8151976721500583E50 /* StatusBarHeightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StatusBarHeightTests-Info.plist"; sourceTree = "<group>"; };
 		203BC8171976721500583E50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		203BC8191976721500583E50 /* StatusBarHeightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusBarHeightTests.m; sourceTree = "<group>"; };
+		203BC8231976726F00583E50 /* JhihTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhihTabBarViewController.h; sourceTree = "<group>"; };
+		203BC8241976726F00583E50 /* JhihTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JhihTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				203BC8041976721500583E50 /* AppDelegate.m */,
 				203BC8061976721500583E50 /* Images.xcassets */,
 				203BC7FB1976721500583E50 /* Supporting Files */,
+				203BC8231976726F00583E50 /* JhihTabBarViewController.h */,
+				203BC8241976726F00583E50 /* JhihTabBarViewController.m */,
 			);
 			path = StatusBarHeight;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 			files = (
 				203BC8051976721500583E50 /* AppDelegate.m in Sources */,
 				203BC8011976721500583E50 /* main.m in Sources */,
+				203BC8251976726F00583E50 /* JhihTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
