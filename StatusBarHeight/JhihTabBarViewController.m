@@ -11,10 +11,13 @@
 @interface JhihTabBarViewController ()
 
 @property (strong, nonatomic) UITabBarController *tabBarController;
+@property CGFloat statusBarHeight;
 
 @end
 
 @implementation JhihTabBarViewController
+
+#define STATUS_BAR_BASE 20.0f
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,10 +33,7 @@
     [super viewDidLoad];
     // initial tabBarController
     _tabBarController = [[UITabBarController alloc] init];
-    // get status bar height
-    CGRect mainFrame = [[UIScreen mainScreen] bounds];
-    CGRect barFrame = [[UIApplication sharedApplication] statusBarFrame];
-    CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
+    
     // add 2 temp view
     UIViewController *first1 = [[UIViewController alloc] init];
     first1.title = @"title1";
@@ -52,7 +52,24 @@
     
     [self.view addSubview:_tabBarController.view];
     
-    
+    // after view did load, will call viewDidLayoutSubviews once
+    // so don't need to get the default statusBarHeight at beginning
+}
+
+- (void)viewDidLayoutSubviews {
+    CGRect barFrame = [[UIApplication sharedApplication] statusBarFrame];
+    if (_statusBarHeight != barFrame.size.height) {
+        CGRect tabViewFrame = _tabBarController.view.frame;
+        NSLog(@"barFrame y:%f height:%f", barFrame.origin.y, barFrame.size.height);
+        CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
+        NSLog(@"applicationFrame y:%f height:%f", applicationFrame.origin.y, applicationFrame.size.height);
+        NSLog(@"old tabViewFrame y:%f height:%f", tabViewFrame.origin.y, tabViewFrame.size.height);
+        tabViewFrame.size = CGSizeMake(tabViewFrame.size.width, applicationFrame.size.height + STATUS_BAR_BASE);
+        tabViewFrame.origin = CGPointMake(0, 0);
+        NSLog(@"new tabViewFrame y:%f height:%f", tabViewFrame.origin.y, tabViewFrame.size.height);
+        _tabBarController.view.frame = tabViewFrame;
+        _statusBarHeight = barFrame.size.height;
+    }
 }
 
 - (void)didReceiveMemoryWarning
