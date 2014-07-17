@@ -20,6 +20,8 @@
 		203BC8181976721500583E50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 203BC8161976721500583E50 /* InfoPlist.strings */; };
 		203BC81A1976721500583E50 /* StatusBarHeightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 203BC8191976721500583E50 /* StatusBarHeightTests.m */; };
 		203BC8251976726F00583E50 /* JhihTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203BC8241976726F00583E50 /* JhihTabBarViewController.m */; };
+		203BC8281977644C00583E50 /* FirstTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203BC8271977644C00583E50 /* FirstTabViewController.m */; };
+		203BC82B1977645900583E50 /* SecondTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203BC82A1977645900583E50 /* SecondTabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		203BC8191976721500583E50 /* StatusBarHeightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusBarHeightTests.m; sourceTree = "<group>"; };
 		203BC8231976726F00583E50 /* JhihTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhihTabBarViewController.h; sourceTree = "<group>"; };
 		203BC8241976726F00583E50 /* JhihTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JhihTabBarViewController.m; sourceTree = "<group>"; };
+		203BC8261977644C00583E50 /* FirstTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTabViewController.h; sourceTree = "<group>"; };
+		203BC8271977644C00583E50 /* FirstTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTabViewController.m; sourceTree = "<group>"; };
+		203BC8291977645900583E50 /* SecondTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTabViewController.h; sourceTree = "<group>"; };
+		203BC82A1977645900583E50 /* SecondTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTabViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,10 @@
 				203BC7FB1976721500583E50 /* Supporting Files */,
 				203BC8231976726F00583E50 /* JhihTabBarViewController.h */,
 				203BC8241976726F00583E50 /* JhihTabBarViewController.m */,
+				203BC8261977644C00583E50 /* FirstTabViewController.h */,
+				203BC8271977644C00583E50 /* FirstTabViewController.m */,
+				203BC8291977645900583E50 /* SecondTabViewController.h */,
+				203BC82A1977645900583E50 /* SecondTabViewController.m */,
 			);
 			path = StatusBarHeight;
 			sourceTree = "<group>";
@@ -244,7 +254,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				203BC82B1977645900583E50 /* SecondTabViewController.m in Sources */,
 				203BC8051976721500583E50 /* AppDelegate.m in Sources */,
+				203BC8281977644C00583E50 /* FirstTabViewController.m in Sources */,
 				203BC8011976721500583E50 /* main.m in Sources */,
 				203BC8251976726F00583E50 /* JhihTabBarViewController.m in Sources */,
 			);

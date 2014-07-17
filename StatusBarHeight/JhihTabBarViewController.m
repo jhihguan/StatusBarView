@@ -7,6 +7,8 @@
 //
 
 #import "JhihTabBarViewController.h"
+#import "FirstTabViewController.h"
+#import "SecondTabViewController.h"
 
 @interface JhihTabBarViewController ()
 
@@ -35,10 +37,10 @@
     _tabBarController = [[UITabBarController alloc] init];
     
     // add 2 temp view
-    UIViewController *first1 = [[UIViewController alloc] init];
+    FirstTabViewController *first1 = [[FirstTabViewController alloc] init];
     first1.title = @"title1";
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:first1];
-    UIViewController *first2 = [[UIViewController alloc] init];
+    SecondTabViewController *first2 = [[SecondTabViewController alloc] init];
     first2.title = @"title2";
     UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:first2];
 
